@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #ccc;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links12 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-links12 li {
+        margin-right: 20px;
+      }
+
+      .nav-links12 li:last-child {
+        margin-right: 0;
+      }
+
+      .nav-links12 a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .signup-button a {
+        text-decoration: none;
+        color: #333;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .signup-button a:hover {
+        background-color: #ff6600;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="admin_home">Submission || Search </a>
+      </div>
+      <ul class="nav-links12">
+        <li><a href="admin_home">Home</a></li>
+        <li><a href="#">collabration</a></li>
+        <li><a href="admin_tracking">Tracking</a></li>
+        <li><a href="search_data_admin">Search</a></li>
+        <li><a href="upload_data_admin">Upload</a></li>
+      </ul>
+      <div class="signup-button">
+        <a href="logout_user">Logout</a>
+      </div>
+    </nav>
+
+
+    <div class="mt-5">
+        <div class="mx-auto col-6">
+            <form >
+            <div class="mb-3">
+                <label for="exampleInputEmail" class="form-label">Search</label>
+                <input type="text"  name="search" class="form-control" value="{{data.title}}">
+            </div>
+        <button type="submit"  class="btn btn-primary">Search</button>
+    </form>
+</div>
+
+    </div>
+    <h2 class="my-5">Own files:</h2>
+<div class="container">
+    <table class="table table-bordered mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Project Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+            {% for data in datas %}
+          <tr>
+            <th scope="row">{{data.id}}</th>
+            <td>{{data.title}}</td>
+            <td>{{data.description}}</td>
+            <td><a href="view_admin_data/{{data.id}}" class="btn btn-warning">View</a></td>
+
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

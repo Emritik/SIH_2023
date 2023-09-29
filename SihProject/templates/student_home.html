@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #ccc;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links12 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-links12 li {
+        margin-right: 20px;
+      }
+
+      .nav-links12 li:last-child {
+        margin-right: 0;
+      }
+
+      .nav-links12 a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .signup-button a {
+        text-decoration: none;
+        color: #333;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .signup-button a:hover {
+        background-color: #ff6600;
+        color: #fff;
+      }
+      .container {
+        width: 99%;
+        height: 420px;
+        display: flex;
+        margin: 5px;
+      }
+      .row {
+        display: inline-block;
+        width: 97%;
+        height: 380px;
+        margin: 17px;
+      }
+      .col1 {
+        flex-basis: 40%;
+        float: left;
+        width: 50%;
+        height: 350px;
+        margin: 12px;
+      }
+      .col2 {
+        flex-basis: 40%;
+        float: right;
+        width: 45%;
+        height: 350px;
+        margin: 12px;
+      }
+      .size1 {
+        font-size: 60px;
+        font-weight: 600;
+        font-family: "Courier New", Courier, monospace;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container1 {
+        margin-left: 200px;
+      }
+
+      .card {
+        width: 300px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        float: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: #333;
+      }
+      .button{
+        width: 150px;
+        border-radius: 5px;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 120px;
+        background-color: rgb(233, 243, 241);
+      }
+      .button:hover{
+        background-color:#97dfff ;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="student_home">Submission || Student </a>
+      </div>
+      <ul class="nav-links12">
+        <li><a href="student_home">Home</a></li>
+        <li><a href="#">collabration</a></li>
+        <li><a href="student_tracking">Tracking</a></li>
+        <li><a href="search_data_student">Search</a></li>
+        <li><a href="upload_data_student">Upload</a></li>
+      </ul>
+      <div class="signup-button">
+        <a href="logout_user">Logout</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col1">
+          <h1 class="size1">
+            Submission - Your Ultimate Thesis and Project Management Portal
+          </h1>
+        </div>
+        <div class="col2">
+          <img
+            src="Https://source.unsplash.com/591x351/?computer,teamproject"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="container1">
+      <div class="card">
+        <h2>University</h2>
+        <p>15+ University uses our portal.</p>
+        <button class="button">View</button>
+      </div>
+      <div class="card">
+        <h2>Collages</h2>
+        <p>50+ collages associated with our  portal.</p>
+        <button class="button">View</button>
+
+      </div>
+      <div class="card">
+        <h2>students</h2>
+        <p>500+ students registered on our portal.</p>
+        <button class="button">View</button>
+
+      </div>
+    </div>
+  </body>
+</html>

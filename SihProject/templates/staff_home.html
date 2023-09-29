@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Dashboard</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #ccc;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links12 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .nav-links12 li {
+        margin-right: 20px;
+      }
+
+      .nav-links12 li:last-child {
+        margin-right: 0;
+      }
+
+      .nav-links12 a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .signup-button a {
+        text-decoration: none;
+        color: #333;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .signup-button a:hover {
+        background-color: #ff6600;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="staff_home">Submission || staff </a>
+      </div>
+      <ul class="nav-links12">
+        <li><a href="staff_home">Home</a></li>
+            <li><a href="#">collabration</a></li>
+            <li><a href="staff_tracking">Tracking</a></li>
+            <li><a href="search_data_staff">Search</a></li>
+            <li><a href="upload_data_staff">Upload</a></li>
+      </ul>
+      <div class="signup-button">
+        <a href="logout_user">Logout</a>
+      </div>
+    </nav>
+  </body>
+</html>
